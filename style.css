@@ -1,0 +1,77 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans", sans-serif;
+}
+
+body {
+  background-color:burlywood;
+  color: aqua;
+}
+
+body form {
+  width: 500px;
+}
+#head:hover{ background: #3f5efb;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(255, 71, 185, 1) 62%
+    );
+ background-clip: text;
+ color: transparent;
+}
+
+fieldset {
+  border: 3px solid green;
+  border-radius: 20px;
+}
+input:required {
+  border: 3px solid rgb(255, 0, 166);
+}
+input:optional {
+  border: 3px dashed blue;
+}
+input:read-only {
+  background-color: green;
+  color: purple;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: rgb(43, 226, 70);
+}
+input[type="submit"] {
+  border: 3px solid rgb(0, 255, 183);
+  border-radius: 15px;
+}
+select {
+  background-color: rgb(255, 174, 0);
+  border-radius: 3px;
+  cursor: pointer;
+}
+input:focus {
+  background-color: rgb(165, 157, 42);
+}
+input[type="text"] + span {
+  display: none;
+}
+input[type="text"]:hover + span {
+  display: inline;
+}
+img {
+  display: none;
+}
+
+input[type="mail"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="mail"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
